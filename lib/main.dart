@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:real_estate/screens/4thpage.dart';
+import 'package:real_estate/screens/5thscreen.dart';
 
 import 'screens/homecreen.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: FourthScreen(),
+      home: HomeScreen(),
     );
   }
 }

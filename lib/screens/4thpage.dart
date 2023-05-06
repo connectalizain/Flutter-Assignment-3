@@ -77,32 +77,41 @@ class FourthScreen extends StatelessWidget {
       fontSize: 20
     ),)
 ,
-    ListView(
-scrollDirection: Axis.horizontal,
-children: [
-  galleryView('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvbWUlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),
-  galleryView('https://plus.unsplash.com/premium_photo-1679466735992-0186056c06cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG9tZSUyMGludGVyaW9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')
-, galleryView('https://images.unsplash.com/photo-1578503439976-f0c1f7daf1cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbWUlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60')
-, galleryView('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvbWUlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),
-  galleryView('https://plus.unsplash.com/premium_photo-1679466735992-0186056c06cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG9tZSUyMGludGVyaW9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')
-, galleryView('https://images.unsplash.com/photo-1578503439976-f0c1f7daf1cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbWUlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60')
-, galleryView('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvbWUlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),
-  galleryView('https://plus.unsplash.com/premium_photo-1679466735992-0186056c06cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG9tZSUyMGludGVyaW9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')
-, galleryView('https://images.unsplash.com/photo-1578503439976-f0c1f7daf1cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhvbWUlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60')
+  Row(children: [SingleChildScrollView(
+    scrollDirection: Axis.horizontal,
+  
+  ),
+  galleryView('https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600'),
+    galleryView('https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=600'),
+      galleryView('https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=600'),
+            galleryView('https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?auto=compress&cs=tinysrgb&w=600'),
 
 
-]
 
-,
-    )
-    
+  ],)
     
 
-                  
-              
-              
-              
-                ]),
+,Text('Price',style: TextStyle(
+      fontWeight: FontWeight.bold,
+      fontSize: 15
+    )),
+ListTile(
+  title: Text('5900000 USD',
+  style: TextStyle(fontWeight: FontWeight.bold,
+  fontSize: 20),),
+  trailing:Container(
+  width: 80,
+  color: Color.fromARGB(255, 58, 133, 171),
+  child: Center(
+    child: Text('Buy Now',
+    style: TextStyle(fontWeight: FontWeight.w600,
+    // fontSize: 20
+    ),),
+  ),),
+)
+
+    
+     ]),
               ),
             )));
   }

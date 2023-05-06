@@ -45,11 +45,12 @@ class SignUp extends StatelessWidget {
                 SizedBox(height: 10),
                 txtfield('Date of Births', reqdsuffix: Icon(Icons.calendar_month_outlined)),
                 SizedBox(height: 10),
-                txtfield('Email', reqdsuffix: Icon(Icons.email_outlined)),
-                SizedBox(height: 10),
+                
                 txtfield('Gender', reqdsuffix: Icon(Icons.arrow_drop_down)),
                                 SizedBox(height: 20),
-
+txtfield('Email', reqdsuffix: Icon(Icons.email_outlined)),
+                SizedBox(height: 10),
+txtfield('Password', reqdsuffix: Icon(Icons.lock)),
 
                 Container(child: ElevatedButton( onPressed: () {
                   Navigator.push(context,
